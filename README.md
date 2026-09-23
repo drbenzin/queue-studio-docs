@@ -9,6 +9,13 @@ This repository holds the user guide and the issue tracker. Report a bug or ask 
 
 Works in IntelliJ IDEA, PyCharm, GoLand, WebStorm and other JetBrains IDEs, version 2025.3 or newer.
 
+![Messages of a quorum queue, read without spending its delivery-limit](images/01-messages.png)
+
+| | |
+|---|---|
+| ![Tooltips explain each queue type](images/02-tooltip.png) | ![Route check in the routing graph](images/03-routing-graph.png) |
+| ![Moving messages out of a dead-letter queue](images/04-move-from-dlq.png) | ![Live view of a queue's traffic](images/05-live.png) |
+
 ## Getting started
 
 1. Install **Queue Studio for RabbitMQ** from *Settings → Plugins → Marketplace*.
