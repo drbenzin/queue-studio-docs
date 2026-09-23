@@ -64,7 +64,7 @@ JSON, as text otherwise; binary and non-UTF-8 content is shown as base64 with a 
 ## Changing messages
 
 - **Publish** to a queue with properties, headers and a payload typed in or loaded from a file.
-- **Move** selected messages to another queue, or back to where a dead-lettered message came from. Each message is
+- **Move** messages from the head of the queue to another queue, or back to where a dead-lettered message came from. Each message is
   acknowledged on the source only after the broker confirms its copy on the target, so a failure never loses one.
 - **Delete** selected messages from the middle of a queue. They are found by content and position; if the queue changed
   and not every target can be found, nothing is removed.
@@ -100,6 +100,6 @@ IDE password safe.
 
 ## Licensing
 
-Queue Studio is a paid plugin sold through JetBrains Marketplace, with a free trial.
+Queue Studio is a paid plugin sold through JetBrains Marketplace, with a 30-day free trial, under the [end user license agreement](EULA.md).
 
 RabbitMQ is a trademark of Broadcom, Inc. Queue Studio is an independent tool and is not affiliated with Broadcom.
