@@ -47,8 +47,9 @@ queues. Right-click a table header to hide or show columns; the choice is rememb
 | Quorum | Up to 5,000 messages over the HTTP API | Marked `redelivered`; does **not** count toward `delivery-limit` |
 
 Streams are read as soon as they open. Classic and quorum queues ask first, because consumers can see the
-`redelivered` flag. Choose **Always read queues when opened** in the banner, or toggle **Read Queues When Opened** on
-the tool window toolbar.
+`redelivered` flag. Choose **Always read queues when opened** in the banner, or turn it on in *Settings → Tools →
+Queue Studio*, which also sets how many messages a queue shows when opened (20 by default) and restores default table
+columns. The gear on the tool window toolbar opens that page.
 
 **Pop** removes messages from the broker and asks for confirmation. Payloads are shown as formatted JSON when they are
 JSON, as text otherwise; binary and non-UTF-8 content is shown as base64 with a note.
