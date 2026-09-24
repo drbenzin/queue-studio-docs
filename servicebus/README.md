@@ -61,6 +61,12 @@ The table shows sequence number, message id, enqueue time, delivery count, subje
 state and application properties. The detail pane shows the body, formatted and coloured when it is JSON, and every
 property.
 
+![The peeked messages of the orders queue: a table of 24 messages and, below it, the formatted JSON body and the properties of the selected one](../docs/servicebus/images/01-messages.png)
+
+A dead-letter queue shows the reason and description Service Bus recorded for each message:
+
+![The dead-letter queue of orders with six messages; the detail pane shows the dead-letter reason PaymentDeclined and its description](../docs/servicebus/images/02-dead-letter.png)
+
 Session-enabled queues and subscriptions are peeked one session at a time with **Peek Session…**. Accepting a
 session locks it, so its consumer waits until the peek is done. Their dead-letter queues need no session.
 
@@ -87,9 +93,15 @@ message.
 
 - **Search** the peeked messages by substring or regular expression, in bodies, application properties
   (`name=value`) or both.
+
+  ![A search for HD-990 in the bodies and properties of the orders queue, showing 5 of 24 messages](../docs/servicebus/images/03-search.png)
+
 - **Move a whole dead-letter queue** back to its queue, or to its topic for a subscription, or to any queue or
   topic. Each batch is sent first and removed from the dead-letter queue only after the send succeeded, so a
   failure leaves the messages where they were. Progress is shown and the move can be cancelled.
+
+  ![Move All Back on the orders dead-letter queue asks where to send the messages, with the queue they came from first](../docs/servicebus/images/04-move-dead-letters.png)
+
 - **Move or delete selected messages.** Service Bus cannot remove a message from the middle of a queue by id. To
   reach the selected ones, messages are received from the start with a lock and the others are released. On a main
   queue each released message counts one more delivery; the confirmation says so. Selected scheduled messages are

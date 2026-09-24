@@ -147,6 +147,25 @@ h3 { font-size: 1.1rem; margin: 0 0 8px; }
 
 .card p { margin: 0; color: var(--muted); }
 
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+figure.shot { margin: 0; }
+.hero figure.shot { margin-top: 32px; }
+
+figure.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+figure.shot figcaption { margin-top: 8px; color: var(--muted); font-size: 0.92rem; }
 .table-scroll { overflow-x: auto; }
 
 table {

@@ -34,6 +34,10 @@
       </div>
       <p class="note">Extension ID <code>factodus.queue-studio-service-bus</code>. Free features forever, every Pro
         feature free for 14 days, no account needed.</p>
+      <figure class="shot">
+        <img src="images/01-messages.png" width="1584" height="992" loading="lazy" decoding="async"
+          alt="VS Code with the Queue Studio tree of an emulator namespace and the peeked messages of the orders queue: a table of 24 messages and, below it, the formatted JSON body and the properties of the selected one">
+      </figure>
     </div>
 
     <section id="features">
@@ -65,6 +69,23 @@
           <p>Search bodies and properties by text or regular expression, move or delete selected messages, purge,
             and export to JSON or NDJSON or send messages from such a file. <strong>Pro</strong></p>
         </div>
+      </div>
+      <div class="shots">
+        <figure class="shot">
+          <img src="images/02-dead-letter.png" width="1584" height="992" loading="lazy" decoding="async"
+            alt="The dead-letter queue of orders with six messages; the detail pane shows the dead-letter reason PaymentDeclined and its description next to the body">
+          <figcaption>A dead-letter queue, with the reason and description of each message.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="images/03-search.png" width="1584" height="992" loading="lazy" decoding="async"
+            alt="A search for HD-990 in the bodies and properties of the orders queue, showing 5 of 24 messages">
+          <figcaption>Search in bodies and properties: 5 of 24 messages match.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="images/04-move-dead-letters.png" width="1584" height="992" loading="lazy" decoding="async"
+            alt="Move All Back on the orders dead-letter queue asks where to send the messages, with the orders queue they came from first, then the other queues and topics">
+          <figcaption>Move All Back offers the queue the messages came from, or any other queue or topic.</figcaption>
+        </figure>
       </div>
     </section>
 
