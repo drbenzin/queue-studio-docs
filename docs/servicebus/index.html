@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Queue Studio for Service Bus</title>
+<meta name="description" content="A VS Code extension for Service Bus queues, topics and dead-letter queues: peek without locks, search, and move a whole dead-letter queue back in one operation.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="">Queue Studio for Service Bus</a>
+    <nav class="site">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="https://github.com/drbenzin/queue-studio-docs/blob/main/servicebus/README.md">Guide</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Service Bus queues and dead-letter queues, inside VS Code</h1>
+      <p class="lead">Peek a whole queue without locking a message, search bodies and properties, and send a whole
+        dead-letter queue back in one operation. Works with Azure Service Bus and the local Service Bus emulator.</p>
+      <div class="actions">
+        <a class="button primary" href="https://marketplace.visualstudio.com/items?itemName=factodus.queue-studio-service-bus">Install from VS Code Marketplace</a>
+        <a class="button secondary" href="https://open-vsx.org/extension/factodus/queue-studio-service-bus">Open VSX</a>
+        <a class="button secondary" href="#pricing">Pricing</a>
+      </div>
+      <p class="note">Extension ID <code>factodus.queue-studio-service-bus</code>. Free features forever, every Pro
+        feature free for 14 days, no account needed.</p>
+    </div>
+
+    <section id="features">
+      <h2>Features</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Cloud and emulator in one tree</h3>
+          <p>Connect with a connection string, Microsoft Entra ID or to the local emulator. Queues, topics and
+            subscriptions show active, dead-letter and scheduled counts, and every queue and subscription has its
+            dead-letter queue right below it.</p>
+        </div>
+        <div class="card">
+          <h3>Peek without locks</h3>
+          <p>Walk a whole queue, subscription, dead-letter queue or session by sequence number. Nothing is locked, so
+            delivery counts and consumers are untouched. JSON bodies are formatted, and every property is shown.</p>
+        </div>
+        <div class="card">
+          <h3>Send and resend</h3>
+          <p>Send with content type, subject, ids, application properties, session, time to live and scheduled
+            enqueue time. Resend fills the form from any message you peeked.</p>
+        </div>
+        <div class="card">
+          <h3>Dead-letter queue back in one step</h3>
+          <p>Move a whole dead-letter queue to its queue or any queue or topic. Each batch is sent first and removed
+            only after the send succeeded, so a failure leaves messages where they were. <strong>Pro</strong></p>
+        </div>
+        <div class="card">
+          <h3>Search, purge, export</h3>
+          <p>Search bodies and properties by text or regular expression, move or delete selected messages, purge,
+            and export to JSON or NDJSON or send messages from such a file. <strong>Pro</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare">
+      <h2>Free and Pro</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Feature</th><th class="mark">Free</th><th class="mark">Pro</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Connections: connection string, Microsoft Entra ID, local emulator</td><td class="mark">✓</td><td class="mark">✓</td></tr>
+            <tr><td>Tree with counts and dead-letter queues</td><td class="mark">✓</td><td class="mark">✓</td></tr>
+            <tr><td>Peek without locks, one session at a time for session-enabled entities</td><td class="mark">✓</td><td class="mark">✓</td></tr>
+            <tr><td>Send and resend</td><td class="mark">✓</td><td class="mark">✓</td></tr>
+            <tr><td>Create, edit and delete queues, topics and subscriptions</td><td class="mark">✓</td><td class="mark">✓</td></tr>
+            <tr><td>Search in bodies and application properties</td><td class="mark">—</td><td class="mark">✓</td></tr>
+            <tr><td>Move a whole dead-letter queue</td><td class="mark">—</td><td class="mark">✓</td></tr>
+            <tr><td>Move or delete selected messages</td><td class="mark">—</td><td class="mark">✓</td></tr>
+            <tr><td>Purge a queue, subscription, dead-letter queue or session</td><td class="mark">—</td><td class="mark">✓</td></tr>
+            <tr><td>Export to JSON or NDJSON, send messages from a file</td><td class="mark">—</td><td class="mark">✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Personal</h3>
+          <div class="price">$4 <small>/ month</small></div>
+          <div>or $40 / year</div>
+          <ul>
+            <li>Bought and paid for by an individual</li>
+            <li>One person, all Pro features</li>
+          </ul>
+        </div>
+        <div class="plan highlight">
+          <h3>Organization</h3>
+          <div class="price">$8 <small>/ month</small></div>
+          <div>or $80 / year</div>
+          <ul>
+            <li>Bought, paid or reimbursed by a company</li>
+            <li>One license per person using Pro</li>
+          </ul>
+        </div>
+      </div>
+      <div class="actions">
+        <!-- TODO(purchase-url): replace href with production.purchaseUrl from licensing.config.json of queue-studio-vscode once the Polar production checkout link exists. -->
+        <a class="button primary" href="#pricing">Buy Pro</a>
+        <a class="button secondary" href="https://polar.sh/factodus/portal">Manage subscription</a>
+      </div>
+      <p class="note">Prices in US dollars, per person. Polar, the merchant of record, handles checkout, tax, invoices,
+        renewals and cancellations. Subscriptions renew until cancelled; cancel any time in the customer portal. Full
+        refund within 14 days of a payment, see <a href="refunds.html">refunds</a>. The 14-day trial needs no payment
+        details and never turns into a charge.</p>
+    </section>
+
+    <section id="start">
+      <h2>Getting started</h2>
+      <ol>
+        <li>Install the extension from the VS Code Marketplace or Open VSX, or run
+          <code>code --install-extension factodus.queue-studio-service-bus</code>.</li>
+        <li>Open <strong>Queue Studio: Service Bus</strong> in the activity bar, press <strong>+</strong> and choose
+          a connection string, Microsoft Entra ID or the local emulator.</li>
+        <li>Click a queue, subscription or dead-letter queue to peek it.</li>
+        <li>After buying Pro, run <strong>Queue Studio: Enter License Key…</strong> and paste the key from your Polar
+          receipt email.</li>
+      </ol>
+      <p>The <a href="https://github.com/drbenzin/queue-studio-docs/blob/main/servicebus/README.md">user guide</a>
+        covers roles for Entra ID, sessions, settings and the known limitations of the emulator.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="terms.html">Terms of sale</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refunds.html">Refunds</a>
+      <a href="support.html">Support</a>
+      <a href="https://github.com/drbenzin/queue-studio-docs/blob/main/servicebus/EULA.md">License agreement</a>
+    </nav>
+    <p>© 2026 Factodus · factodus@gmail.com</p>
+    <p>Microsoft, Azure, Azure Service Bus and Visual Studio Code are trademarks of the Microsoft group of companies.
+      Queue Studio is an independent product and is not affiliated with or endorsed by Microsoft.</p>
+  </div>
+</footer>
+</body>
+</html>

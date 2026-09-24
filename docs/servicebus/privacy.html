@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Queue Studio for Service Bus</title>
+<meta name="description" content="Privacy policy for Queue Studio for Service Bus: no telemetry; only the license key and machine identifier go to Polar.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="">Queue Studio for Service Bus</a>
+    <nav class="site">
+      <a href="./#features">Features</a>
+      <a href="./#pricing">Pricing</a>
+      <a href="https://github.com/drbenzin/queue-studio-docs/blob/main/servicebus/README.md">Guide</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap doc">
+    <h1>Privacy Policy</h1>
+    <p class="note">Effective 24 September 2026.</p>
+    <p>Factodus makes Queue Studio for Service Bus. This policy covers the extension, this website and purchases of
+      Pro. Factodus collects no telemetry, runs no server of its own and does not sell or share personal data.</p>
+
+    <h2>The extension</h2>
+    <p><strong>What goes to Polar.</strong> To check a Pro license the extension sends to Polar (polar.sh), the
+      merchant that sells the keys:</p>
+    <ul>
+      <li>the license key you entered;</li>
+      <li>the VS Code machine identifier (<code>vscode.env.machineId</code>, an anonymous hash that VS Code generates)
+        and a label made of the editor name and the first 8 characters of that identifier.</li>
+    </ul>
+    <p>This happens when you enter a key, about every three days while a key is active, and when you remove the key
+      from a machine. Without a key, nothing is sent.</p>
+    <p><strong>What stays on your machine.</strong> Connection strings and the license key are kept in VS Code's
+      secret storage; the list of connections, the trial start date and the license state in VS Code's global state.
+      Messages, entity names and credentials travel only between VS Code and the Service Bus namespaces and emulators
+      you configure; Microsoft Entra ID sign-in goes through the Azure credential you choose.</p>
+
+    <h2>Purchases</h2>
+    <p>Polar handles checkout and payment as merchant of record, under the
+      <a href="https://polar.sh/legal/privacy">Polar privacy policy</a>. Factodus never sees card details. From Polar,
+      Factodus receives your name, email address, billing country, the plan and order history, and the license key's
+      activations. They are used only to provide the license, answer support requests, and issue refunds and
+      invoices, and are kept as long as tax and accounting rules require.</p>
+
+    <h2>This website</h2>
+    <p>This website is hosted on GitHub Pages. It sets no cookies and has no analytics, trackers or third-party
+      scripts. GitHub may log visitors' IP addresses to operate and secure the service, under the
+      <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy
+      statement</a>. Issues you open in the public issue tracker are public and are processed by GitHub.</p>
+
+    <h2>Email</h2>
+    <p>If you write to <a href="mailto:factodus@gmail.com">factodus@gmail.com</a>, your message and address are kept to
+      answer you and to keep a record of support and refunds.</p>
+
+    <h2>Your rights</h2>
+    <p>You can ask for a copy of your data, for a correction or for deletion, except what must be kept for tax and
+      accounting, at <a href="mailto:factodus@gmail.com">factodus@gmail.com</a>. If you are in the EU or the UK, you
+      can also complain to your data protection authority.</p>
+
+    <h2>Changes</h2>
+    <p>A changed policy is published here with a new effective date.</p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="terms.html">Terms of sale</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="refunds.html">Refunds</a>
+      <a href="support.html">Support</a>
+      <a href="https://github.com/drbenzin/queue-studio-docs/blob/main/servicebus/EULA.md">License agreement</a>
+    </nav>
+    <p>© 2026 Factodus · factodus@gmail.com</p>
+    <p>Microsoft, Azure, Azure Service Bus and Visual Studio Code are trademarks of the Microsoft group of companies.
+      Queue Studio is an independent product and is not affiliated with or endorsed by Microsoft.</p>
+  </div>
+</footer>
+</body>
+</html>

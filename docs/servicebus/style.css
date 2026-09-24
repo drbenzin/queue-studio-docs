@@ -1,0 +1,205 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --bg-soft: #f4f6f9;
+  --text: #1b1f24;
+  --muted: #57606a;
+  --border: #d8dee4;
+  --accent: #0b63ce;
+  --accent-text: #ffffff;
+  --accent-soft: #e6f0fc;
+  --code-bg: #eef1f4;
+  --radius: 10px;
+  --max: 1040px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1216;
+    --bg-soft: #171b21;
+    --text: #e6e9ed;
+    --muted: #9aa4af;
+    --border: #2b323b;
+    --accent: #4c9bff;
+    --accent-text: #0b1320;
+    --accent-soft: #15253a;
+    --code-bg: #1d232b;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 var(--font);
+}
+
+a { color: var(--accent); }
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: var(--code-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header.site {
+  border-bottom: 1px solid var(--border);
+}
+
+header.site .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.brand img { width: 28px; height: 28px; }
+
+nav.site {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  font-size: 0.95rem;
+}
+
+nav.site a { color: var(--muted); text-decoration: none; }
+nav.site a:hover, nav.site a[aria-current="page"] { color: var(--text); }
+
+main { padding: 40px 0 56px; }
+
+.hero { padding: 24px 0 40px; }
+
+.hero h1 {
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
+  line-height: 1.15;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.hero p.lead {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 44em;
+  margin: 0 0 24px;
+}
+
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button.primary { background: var(--accent); color: var(--accent-text); }
+.button.secondary { color: var(--accent); background: transparent; }
+
+.note { color: var(--muted); font-size: 0.92rem; }
+
+section { margin-top: 48px; }
+
+h2 { font-size: 1.5rem; margin: 0 0 16px; }
+h3 { font-size: 1.1rem; margin: 0 0 8px; }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.card p { margin: 0; color: var(--muted); }
+
+.table-scroll { overflow-x: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.97rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+th { font-weight: 600; }
+td.mark, th.mark { text-align: center; width: 5.5em; }
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.plan {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plan.highlight { border-color: var(--accent); background: var(--accent-soft); }
+
+.price { font-size: 2rem; font-weight: 700; line-height: 1.1; }
+.price small { font-size: 1rem; font-weight: 400; color: var(--muted); }
+.plan ul { margin: 4px 0 0; padding-left: 1.2em; color: var(--muted); }
+
+.doc { max-width: 46em; }
+.doc h1 { font-size: clamp(1.7rem, 4vw, 2.2rem); line-height: 1.2; margin: 0 0 8px; }
+.doc h2 { margin-top: 32px; font-size: 1.25rem; }
+.doc ul, .doc ol { padding-left: 1.3em; }
+.doc li { margin: 4px 0; }
+
+footer.site {
+  border-top: 1px solid var(--border);
+  padding: 24px 0 32px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+footer.site nav { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 12px; }
+footer.site a { color: var(--muted); }
+footer.site p { margin: 6px 0; }
