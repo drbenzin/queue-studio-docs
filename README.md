@@ -7,6 +7,8 @@ queue, watch live traffic, read streams, manage policies and trace routing keys 
 This repository holds the user guide and the issue tracker. Report a bug or ask for a feature in
 [Issues](../../issues); for anything private write to factodus@gmail.com.
 
+For Amazon SQS and SNS, see [Queue Studio for Amazon SQS](sqs/README.md).
+
 Works in IntelliJ IDEA, PyCharm, GoLand, WebStorm and other JetBrains IDEs, version 2025.3 or newer.
 
 ![Messages of a quorum queue, read without spending its delivery-limit](images/01-messages.png)
