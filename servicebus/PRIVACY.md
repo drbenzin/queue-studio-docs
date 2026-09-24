@@ -51,3 +51,6 @@ authority.
 ## Changes
 
 A changed policy is published here with a new effective date.
+
+Microsoft, Azure, Azure Service Bus and Visual Studio Code are trademarks of the Microsoft group of companies.
+Queue Studio is an independent product and is not affiliated with or endorsed by Microsoft.
