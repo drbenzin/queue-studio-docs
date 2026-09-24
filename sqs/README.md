@@ -1,8 +1,14 @@
 # Queue Studio for Amazon SQS
 
-A JetBrains IDE plugin for Amazon SQS and SNS. It connects to AWS profiles and to local emulators, reads up to 10,000
-messages at once with receive counts, redrives dead-letter queues, and publishes to topics, all without leaving the
-editor.
+A JetBrains IDE plugin for Amazon SQS and SNS that lets you look at messages without pushing them into the
+dead-letter queue.
+
+SQS has no peek: every look at a message is a receive. In a queue with a redrive policy, a few looks in an ordinary
+viewer quietly move messages to the DLQ. Queue Studio says before each read what it will do to the queue, shows how
+many receives each message has left, holds what it read and gives it back at once when you are done.
+
+It also redrives dead-letter queues, moves, fixes and resends messages, and publishes to topics. It works with AWS
+profiles and local emulators, all without leaving the editor.
 
 Report a bug or ask for a feature in [Issues](../../../issues). For anything private, write to factodus@gmail.com.
 
