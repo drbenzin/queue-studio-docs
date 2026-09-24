@@ -8,8 +8,8 @@ Copyright (c) 2026 Factodus. All rights reserved.
 2. **License types.** A *personal* license is bought and paid for by an individual with their own funds, for
    their own use. An *organization* license is needed when Pro is used by or on behalf of a company or other
    organization that buys it or pays or reimburses for it. Either way a license key is for one person, and an
-   organization needs one key for each person who uses Pro. A key may be active on the number of machines stated
-   at checkout; you can release a machine with the *Remove License Key from This Machine* command or in the
+   organization needs one key for each person who uses Pro. A key may be active on up to three machines at a
+   time; you can release a machine with the *Remove License Key from This Machine* command or in the
    customer portal.
 3. **Purchase.** License keys are sold through Polar (polar.sh) as merchant of record, under its buyer terms and
    the [terms of sale](TERMS.md). Polar handles payment, taxes, invoices, cancellations and refunds.

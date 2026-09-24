@@ -47,18 +47,11 @@ then, and afterwards the Pro features stop and the free features keep working.
 
 ## Refunds
 
-You can ask for a refund of any payment within 14 days after it was made, for any reason. The payment is refunded
-in full, including tax, through Polar to the original payment method.
+Every Pro feature can be tried free for 14 days before paying, so payments are not refunded, except where the law
+requires it. Cancelling stops future renewals; the key keeps working until the end of the paid period.
 
-- **How to ask:** email factodus@gmail.com from the address you used at checkout, or reply to your Polar receipt
-  email. Include the order number or the email address of the purchase.
-- **What happens:** the refund is issued through Polar, and the subscription is cancelled at the same time, so its
-  license key stops working. How long the money takes to appear depends on your bank or card issuer.
-- **After 14 days:** payments for the current or past periods are not refunded, except where the law requires it.
-  Cancelling stops future renewals.
-
-Polar may also refund a payment on its own under its buyer terms. Please write to us before opening a chargeback
-with your bank; we will resolve the problem or refund within the window above.
+Refunds required by law, payment disputes and chargebacks are handled by Polar, the merchant of record, under its
+[buyer terms](https://polar.sh/legal/checkout-buyer-terms).
 
 Nothing in these terms limits rights you have as a consumer under the law of your country that cannot be limited
 by contract.
