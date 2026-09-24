@@ -94,7 +94,7 @@ message.
 - **Search** the peeked messages by substring or regular expression, in bodies, application properties
   (`name=value`) or both.
 
-  ![A search for HD-990 in the bodies and properties of the orders queue, showing 5 of 24 messages](../docs/servicebus/images/03-search.png)
+  ![A search for HD-990 in the bodies and properties of the orders queue, showing 6 of 30 messages](../docs/servicebus/images/03-search.png)
 
 - **Move a whole dead-letter queue** back to its queue, or to its topic for a subscription, or to any queue or
   topic. Each batch is sent first and removed from the dead-letter queue only after the send succeeded, so a
