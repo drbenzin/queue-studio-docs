@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+    inputs:
+      vsix: {description: Path to the .vsix in this repo, required: true}
+permissions: {contents: read, id-token: write}
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: npx --yes ovsx publish "$VSIX" --trusted-publishing
+        env: {VSIX: '${{ inputs.vsix }}'}
