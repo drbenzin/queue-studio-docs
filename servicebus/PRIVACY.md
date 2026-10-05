@@ -39,13 +39,13 @@ Issues you open in the public issue tracker are public and are processed by GitH
 
 ## Email
 
-If you write to factodus@gmail.com, your message and address are kept to answer you and to keep a record of
+If you write to support@factodus.com, your message and address are kept to answer you and to keep a record of
 support and refunds.
 
 ## Your rights
 
 You can ask for a copy of your data, for a correction or for deletion, except what must be kept for tax and
-accounting, at factodus@gmail.com. If you are in the EU or the UK, you can also complain to your data protection
+accounting, at support@factodus.com. If you are in the EU or the UK, you can also complain to your data protection
 authority.
 
 ## Changes

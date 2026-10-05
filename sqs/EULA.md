@@ -15,7 +15,7 @@ Copyright (c) 2026 Factodus. All rights reserved.
    without warranty of any kind, and Factodus is not liable for any claim, damages or other liability arising from its
    use, including loss of messages or data in connected accounts. Nothing in this agreement limits rights you have as
    a consumer that cannot be limited by contract.
-5. **Contact.** factodus@gmail.com.
+5. **Contact.** support@factodus.com.
 
 Amazon SQS, Amazon SNS and AWS are trademarks of Amazon.com, Inc. or its affiliates. Queue Studio is an independent
 product and is not affiliated with or endorsed by Amazon.

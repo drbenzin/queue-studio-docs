@@ -10,7 +10,7 @@ many receives each message has left, holds what it read and gives it back at onc
 It also redrives dead-letter queues, moves, fixes and resends messages, and publishes to topics. It works with AWS
 profiles and local emulators, all without leaving the editor.
 
-Report a bug or ask for a feature in [Issues](../../../issues). For anything private, write to factodus@gmail.com.
+Report a bug or ask for a feature in [Issues](../../../issues). For anything private, write to support@factodus.com.
 
 It works in IntelliJ IDEA, PyCharm, GoLand, WebStorm and other JetBrains IDEs, version 2025.3 or newer.
 

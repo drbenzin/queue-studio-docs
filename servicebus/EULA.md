@@ -25,7 +25,7 @@ Copyright (c) 2026 Factodus. All rights reserved.
    is", without warranty of any kind, and Factodus is not liable for any claim, damages or other liability arising
    from its use, including loss or duplication of messages or data in connected namespaces. Nothing in this
    agreement limits rights you have as a consumer that cannot be limited by contract.
-7. **Contact.** factodus@gmail.com.
+7. **Contact.** support@factodus.com.
 
 Microsoft, Azure, Azure Service Bus and Visual Studio Code are trademarks of the Microsoft group of companies.
 Queue Studio is an independent product and is not affiliated with or endorsed by Microsoft.

@@ -5,7 +5,7 @@ publish messages, move them out of dead-letter queues without loss, delete or ed
 queue, watch live traffic, read streams, manage policies and trace routing keys through a graph.
 
 This repository holds the user guide and the issue tracker. Report a bug or ask for a feature in
-[Issues](../../issues); for anything private write to factodus@gmail.com.
+[Issues](../../issues); for anything private write to support@factodus.com.
 
 For Amazon SQS and SNS, see [Queue Studio for Amazon SQS](sqs/README.md).
 

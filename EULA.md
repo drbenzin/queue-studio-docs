@@ -14,7 +14,7 @@ Copyright (c) 2026 Factodus. All rights reserved.
    without warranty of any kind, and Factodus is not liable for any claim, damages or other liability arising from its
    use, including loss of messages or data in connected brokers. Nothing in this agreement limits rights you have as a
    consumer that cannot be limited by contract.
-5. **Contact.** factodus@gmail.com.
+5. **Contact.** support@factodus.com.
 
 RabbitMQ is a trademark of Broadcom, Inc. Queue Studio is an independent product and is not affiliated with or
 endorsed by Broadcom.

@@ -7,7 +7,7 @@ Service Bus emulator.
 
 Website and pricing: <https://drbenzin.github.io/queue-studio-docs/servicebus/>. Report a bug or ask for a feature
 in [Issues](https://github.com/drbenzin/queue-studio-docs/issues); for anything private, write to
-factodus@gmail.com.
+support@factodus.com.
 
 ## Installation
 

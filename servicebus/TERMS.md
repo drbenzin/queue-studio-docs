@@ -63,4 +63,4 @@ you have already paid for.
 
 ## Contact
 
-Factodus, factodus@gmail.com. For payments, invoices and receipts you can also contact Polar at support@polar.sh.
+Factodus, support@factodus.com. For payments, invoices and receipts you can also contact Polar at support@polar.sh.
