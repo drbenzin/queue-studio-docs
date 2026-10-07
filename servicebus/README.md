@@ -49,13 +49,15 @@ The connection is tried before it is saved. *Remove Connection* in the context m
 Click a queue, subscription or dead-letter queue to peek it. The refresh button re-reads a connection, a folder or a
 topic.
 
-The context menu creates queues, topics and subscriptions, deletes them, and opens **Settings…**: max delivery
-count, lock duration, time to live, dead-lettering on expiration and forwarding.
+The context menu creates queues, topics and subscriptions, deletes them, and opens **Settings…**: for a queue or
+subscription max delivery count, lock duration, time to live, dead-lettering on expiration and forwarding; for a
+topic its default time to live.
 
 ## Peek without locks
 
-Peek walks the whole queue, subscription, dead-letter queue or one session by sequence number, in pages, up to a
-limit you set. Nothing is locked, so delivery counts and consumers are not affected.
+Peek walks the whole queue, subscription or dead-letter queue by sequence number, in pages, up to a limit you set.
+Nothing is locked, so delivery counts and consumers are not affected. A session-enabled entity is read one session
+at a time, which locks that session while it loads (see below).
 
 The table shows sequence number, message id, enqueue time, delivery count, subject, content type, size, session,
 state and application properties. The detail pane shows the body, formatted and coloured when it is JSON, and every
@@ -98,15 +100,16 @@ message.
 
 - **Move a whole dead-letter queue** back to its queue, or to its topic for a subscription, or to any queue or
   topic. Each batch is sent first and removed from the dead-letter queue only after the send succeeded, so a
-  failure leaves the messages where they were. Progress is shown and the move can be cancelled.
+  failed send leaves the messages where they were; if removing a sent message fails, it is reported and may then
+  be in both places. Progress is shown and the move can be cancelled.
 
   ![Move All Back on the orders dead-letter queue asks where to send the messages, with the queue they came from first](../docs/servicebus/images/04-move-dead-letters.png)
 
 - **Move or delete selected messages.** Service Bus cannot remove a message from the middle of a queue by id. To
   reach the selected ones, messages are received from the start with a lock and the others are released. On a main
-  queue each released message counts one more delivery; the confirmation says so. Selected scheduled messages are
-  cancelled.
-- **Purge** a queue, a subscription, a dead-letter queue or one session.
+  queue each released message counts one more delivery; the confirmation says so. A selected scheduled message of
+  a queue is scheduled on the target for the same time and then cancelled when moved, and cancelled when deleted.
+- **Purge** a queue, a subscription, a dead-letter queue or one session. Scheduled and deferred messages stay.
 - **Export** selected or shown messages to JSON or NDJSON, and **Send Messages from File…** sends such a file to a
   queue or topic.
 
@@ -154,7 +157,7 @@ invoices.
 - Moving or deleting selected messages receives the messages before them with a lock and releases them, which
   raises their delivery count on a main queue.
 
-With the local emulator (tested with `mcr.microsoft.com/azure-messaging/servicebus-emulator` 2.0):
+With the local emulator (tested with the `mcr.microsoft.com/azure-messaging/servicebus-emulator` image of September 2026):
 
 - The management API is plain HTTP on port 5300, while the JavaScript administration client only speaks HTTPS, so
   Queue Studio switches the scheme for emulator connections.
