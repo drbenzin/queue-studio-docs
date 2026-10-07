@@ -123,7 +123,7 @@ your own profiles.
 
 ## License
 
-A paid plugin with a 30-day free trial, sold through JetBrains Marketplace. See the [end user license agreement](EULA.md).
+A paid plugin with a free trial, sold through JetBrains Marketplace. See the [end user license agreement](EULA.md).
 
 Amazon SQS, Amazon SNS and AWS are trademarks of Amazon.com, Inc. or its affiliates. This plugin is an independent
 tool and is not affiliated with or endorsed by Amazon.

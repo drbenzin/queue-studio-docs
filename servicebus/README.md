@@ -1,4 +1,4 @@
-# Queue Studio for Service Bus
+# Queue Studio for Azure Service Bus
 
 A Visual Studio Code extension for Service Bus queues, topics and dead-letter queues. Cloud namespaces and the
 local emulator sit in one tree. You can peek a whole queue without locking anything, search message bodies and
@@ -13,7 +13,7 @@ support@factodus.com.
 
 The extension ID is `factodus.queue-studio-service-bus`. It needs VS Code 1.96 or newer.
 
-- **VS Code Marketplace:** search for *Queue Studio for Service Bus* in the Extensions view, or open
+- **VS Code Marketplace:** search for *Queue Studio for Azure Service Bus* in the Extensions view, or open
   [its page](https://marketplace.visualstudio.com/items?itemName=factodus.queue-studio-service-bus).
 - **Open VSX**, for VSCodium and other editors that use it:
   [open-vsx.org/extension/factodus/queue-studio-service-bus](https://open-vsx.org/extension/factodus/queue-studio-service-bus).
@@ -112,19 +112,16 @@ message.
 
 ### Trial
 
-Every Pro feature works for 14 days from the first run, without an account or payment details. When the trial ends
+Every Pro feature works from the first run for the trial period shown on the [product page](https://factodus.com/queue-studio/service-bus/#pricing), without an account or payment details. When the trial ends
 nothing is charged: the Pro features ask for a license key, and the free features keep working.
 
 ### Prices
 
-| | Monthly | Yearly |
-|---|---|---|
-| Personal, paid by an individual | $4 | $40 |
-| Organization, paid by a company | $8 | $80 |
+Plans and prices: [product page](https://factodus.com/queue-studio/service-bus/#pricing).
 
 Prices are per person and in US dollars. Polar, the merchant of record, sells the license keys, calculates any sales
 tax or VAT at checkout and handles invoices, renewals, cancellations and refunds. See the
-[terms of sale](TERMS.md).
+[terms of sale](https://drbenzin.github.io/queue-studio-docs/servicebus/terms.html).
 
 ### Activating a license key
 
@@ -173,12 +170,12 @@ With the local emulator (tested with `mcr.microsoft.com/azure-messaging/serviceb
 ## Privacy
 
 The extension collects no telemetry. It talks to the Service Bus namespaces and emulators you configure, and sends
-the license key and the machine identifier to Polar to check a license. See the [privacy policy](PRIVACY.md).
+the license key and the machine identifier to Polar to check a license. See the [privacy policy](https://drbenzin.github.io/queue-studio-docs/servicebus/privacy.html).
 
 ## License and support
 
-Queue Studio for Service Bus is proprietary, under the [end user license agreement](EULA.md). Purchases follow the
-[terms of sale](TERMS.md). For help, see [support](SUPPORT.md).
+Queue Studio for Azure Service Bus is proprietary, under the [end user license agreement](EULA.md). Purchases follow the
+[terms of sale](https://drbenzin.github.io/queue-studio-docs/servicebus/terms.html). For help, see [support](https://drbenzin.github.io/queue-studio-docs/servicebus/support.html).
 
 Microsoft, Azure, Azure Service Bus and Visual Studio Code are trademarks of the Microsoft group of companies. Queue
 Studio is an independent product and is not affiliated with or endorsed by Microsoft.

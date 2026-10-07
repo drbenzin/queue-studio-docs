@@ -102,6 +102,6 @@ IDE password safe.
 
 ## Licensing
 
-Queue Studio is a paid plugin sold through JetBrains Marketplace, with a 30-day free trial, under the [end user license agreement](EULA.md).
+Queue Studio is a paid plugin sold through JetBrains Marketplace, with a free trial, under the [end user license agreement](EULA.md).
 
 RabbitMQ is a trademark of Broadcom, Inc. Queue Studio is an independent tool and is not affiliated with Broadcom.

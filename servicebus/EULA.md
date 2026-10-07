@@ -1,9 +1,9 @@
-# Queue Studio for Service Bus — End User License Agreement
+# Queue Studio for Azure Service Bus — End User License Agreement
 
 Copyright (c) 2026 Factodus. All rights reserved.
 
 1. **License.** The extension is licensed, not sold. You may install it in Visual Studio Code and compatible
-   editors and use its free features without charge. Its Pro features may be used during a 14-day trial that
+   editors and use its free features without charge. Its Pro features may be used during the free trial (its length is on the [product page](https://factodus.com/queue-studio/service-bus/#pricing)) that
    starts with the first run, and afterwards with a valid license key for the term of a paid subscription.
 2. **License types.** A *personal* license is bought and paid for by an individual with their own funds, for
    their own use. An *organization* license is needed when Pro is used by or on behalf of a company or other
@@ -12,14 +12,14 @@ Copyright (c) 2026 Factodus. All rights reserved.
    time; you can release a machine with the *Remove License Key from This Machine* command or in the
    customer portal.
 3. **Purchase.** License keys are sold through Polar (polar.sh) as merchant of record, under its buyer terms and
-   the [terms of sale](TERMS.md). Polar handles payment, taxes, invoices, cancellations and refunds.
+   the [terms of sale](https://drbenzin.github.io/queue-studio-docs/servicebus/terms.html). Polar handles payment, taxes, invoices, cancellations and refunds.
 4. **Restrictions.** You may not redistribute, sublicense, rent or resell the extension or license keys, share a
    key with another person or beyond its activations, circumvent the license check, or reverse engineer the
    extension or create derivative works of it, except to the extent such restriction is prohibited by applicable
    law.
 5. **Your data.** The extension connects only to the Service Bus namespaces and emulators you configure, with the
    credentials you provide. To check a license it sends the license key and a machine identifier to Polar, as
-   described in the [privacy policy](PRIVACY.md). You are responsible for the operations you perform on your
+   described in the [privacy policy](https://drbenzin.github.io/queue-studio-docs/servicebus/privacy.html). You are responsible for the operations you perform on your
    entities and messages.
 6. **Warranty and liability.** To the maximum extent permitted by applicable law, the extension is provided "as
    is", without warranty of any kind, and Factodus is not liable for any claim, damages or other liability arising
